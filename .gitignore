@@ -1,0 +1,10 @@
+.venv
+Quiz.db
+*.db
+traffic_dict.pkl
+student-dashboard/node_modules
+__pycache__
+dist
+build
+main.spec
+deployed_user_data.json

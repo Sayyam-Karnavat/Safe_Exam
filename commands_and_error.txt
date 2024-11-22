@@ -1,0 +1,36 @@
+Errors fixed :-
+
+
+1.If not libcap provided error is coming for wireless screen cast detection please install either wireshark or npcap(since winpcap is for unix)
+link :- https://npcap.com/
+
+
+
+2 . Scikit learn version incompatible error :- 
+
+pip install scikit-learn==1.4.1.post1 ( I was using scikit learn latest 1.5.1 to load the min max scaler and it gave me error )
+
+
+3. If you get access denied error at the end of quiz for "kill-conhost.ps1" script then change execution policy of pc by running Powershell in admin mode
+( OR to use it in cmd use this command :- powershell.exe -ExecutionPolicy Bypass -File kill-conhost.ps1)
+
+
+(Get-ExecutionPolicy :- To get the current policy)
+ Open powershell and type either of the two Commands 
+
+ Set-ExecutionPolicy RemoteSigned 
+ # or
+ Set-ExecutionPolicy Unrestricted 
+
+
+
+## To convert python scripts to exe :=
+
+pyinstaller --onefile -w main.py
+
+
+
+
+
+#### Commands used :- 
+
